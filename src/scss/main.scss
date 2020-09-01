@@ -2,12 +2,63 @@
 
 @import "_variables";
 @import "modules/hello.scss";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 
 body {
-  background: $wtf;
+  background: #17242c;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  margin: 0 auto;
+}
+.box-head {
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+  max-width: 1930px;
+  position: fixed;
+  top: 64px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  &__image {
+    margin-right: 21px;
+    height: 25px;
+    width: 25px;
+  }
+  &__title {
+    font-style: normal;
+font-size: 22px;
+line-height: 27px;
+margin-right: 289px;
+  }
+  &__links {
+    color: #ECF8FF;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 27px;
+    margin-right: 32px;
+  }
+}
+.main{
+  margin-top: 200px;
+}
+
+.homepage-content {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  &__title {
+    color: #82F9A1;
+    text-shadow: 0px 0px 76px rgba(188, 251, 195, 0.3);
+    width: 680px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 142%;
+margin: 0 auto;
+  }
 }
