@@ -2,7 +2,16 @@
 
 @import "_variables";
 @import "modules/hello.scss";
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
 body {
   background: #17242c;
@@ -14,15 +23,16 @@ body {
   margin: 0 auto;
 }
 .box-head {
+  background-color: #17242c;
   font-family: 'Open Sans', sans-serif;
   box-sizing: border-box;
   max-width: 1930px;
-  position: fixed;
-  top: 64px;
+  position: absolute;
+  top: 65px;
   padding: 10px;
   display: flex;
   flex-direction: row;
-  &__image {
+  &__heart {
     margin-right: 21px;
     height: 25px;
     width: 25px;
@@ -41,19 +51,28 @@ margin-right: 289px;
     margin-right: 32px;
   }
 }
+a {
+  color: #ECF8FF;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 27px;
+  margin-right: 32px;
+}
 .main{
-  margin-top: 200px;
+margin: 0 auto;
 }
 
 .homepage-content {
+  margin-top: 195px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 20px;
   &__title {
     color: #82F9A1;
-    text-shadow: 0px 0px 76px rgba(188, 251, 195, 0.3);
-    width: 680px;
+    text-shadow: 0px 0px 76px rgba(175, 250, 184, 0.3);
+    width: 550px;
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
 font-weight: bold;
@@ -61,4 +80,45 @@ font-size: 48px;
 line-height: 142%;
 margin: 0 auto;
   }
+  &__description {
+    color: #ECF8FF;
+    font-size: 17px;
+line-height: 180%;
+font-family: 'Open Sans', sans-serif;
+width: 560px;
+margin: 41px;
+ }
 }
+.week-header{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+line-height: 36px;
+color: #ECF8FF;
+margin-left: 310px;
+margin-bottom: 40px;
+}
+
+.week-note {
+  box-sizing: border-box;
+display: grid;
+grid-template-columns: 1fr 1fr;
+max-width: 800px;
+&__article {
+  margin: 10px;
+  background: #1C2C35;
+  width: 400px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border-left: 5px solid #82F9A1;
+  padding: 20px;
+}
+  &__title {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  &__descripiton {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+  }
+  }
