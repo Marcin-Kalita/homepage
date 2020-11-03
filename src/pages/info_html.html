@@ -8,51 +8,44 @@
 
   <body>
     <header class="box-head">
-      <button class="menu menu--js">Menu</button>
-      <div class="box-head__title">Strona Domowa Marcin Kalita</div>
-      <nav class="item item--js">
-        <a class="box-head__links" href="info_html.html">Html</a>
-        <a class="box-head__links" href="index.html">Strona Główna</a>
-        <a class="box-head__links" href="info_css.html">Css</a>
-        <a class="box-head__links" href="info_js.html">Js</a>
-        <a class="box-head__links" href="about.html">O Mnie</a>
-        <button class="box-head__js--button">Change header</button>
-        <p class="box-head__description">    Od nowego dnia mineło: </p><span class="time--js"></span>
-      </nav>
+      <img class="box-head__heart" src="/src/assets/img/Heart.svg" alt="heart" class="header__heart" />
+      <div class="box-head__title">Marcin Kalita</div>
+      <a class="box-head__links" href="index.html">Strona główna</a>
+      <a class="box-head__links" href="info_html.html">Html</a>
+      <a class="box-head__links" href="info_css.html">Css</a>
+      <a class="box-head__links" href="info_js.html">Js</a>
+      <a class="box-head__links" href="about.html">O Mnie</a>
     </header>
 
     <main>
-      <section class="content">
-        <h2 class="header__content content__js">Witam na mojej Stronie</h2>
-        <article class="content__article">
-        <h2 class="header__subject">Wastwy strony internetowej</h2>
+      <section class="homepage-content">
+        <h2 class="header">Wastwy strony internetowej</h2>
         <img
           src="/src/assets/img/warstwy-html.jpg"
           alt="warstwy-html"
           width="350"
           height="300"
-          style="margin: 0px 0px 0px;">
+          style="margin: 0px 0px 20px;">
         </article>
-        
-        <article class="content__article">
-          <h2 class="content__head">Materiały ze szkolenia Html'a</h2>
-          <h3 class="content__header">Czym jest Html?</h3>
-          <p class="content__description">
-            HTML = HyperText MarkupLanguage. Jako szkielet strony
-            internetowej<br />
+      </section>
+
+      
+      <section class="note">
+        <article class="note__article">
+          <h2 class="note__title">Czym jest Html?</h2>
+          <p class="note__descripiton">
+            HTML = HyperText MarkupLanguage.<br />
+             Jako szkielet strony internetowej
             odpowiada za treść a właściwie ze jej właściwe opakowanie
             mianowicie:<br />
             Teksty, nagłówki, linki, Obrazki, Video, formularze<br />
             Składa się ze znaczników/tagów/elementów
           </p>
         </article>
-      </section>
 
-      <section class="content">
-        <h2 class="content__head">Znaczniki</h2>
-        <article class="content__article">
-          <h3 class="content__header">Przykładowe znaczniki:</h3>
-          <div class="info-html__box">
+        <article class="note__article">
+          <h2 class="note__title">Przykładowe znaczniki:</h2>
+          <div class="note__descripiton">
             &lt; main &gt; &ndash;główna część dokumentu<br />
             &lt; section &gt; &ndash;sekcja dokumentu<br />
             &lt; article &gt; &ndash; samodzielne treści<br />
@@ -67,8 +60,11 @@
             &lt;nav&gt; &ndash; nawigacja między stronami<br />
             &lt;u&gt; &ndash; podkreślony <br />
           </div>
-          <h4>Jak przemieszczać się szybko wewnątrz strony?</h4>
-          <p class="content__description">
+        </article>
+
+        <article class="note__article">
+          <h2 class="note__title">Jak przemieszczać się szybko wewnątrz strony?</h2>
+          <p class="note__descripiton">
             <i>Na przykładzie:</i> wpisujemy &lt;section&gt; dodajemy
             id="<u>treść</u>" do niego, aby wejść w tą sekcje tworzysz link
             zewnętrzny:<br />
